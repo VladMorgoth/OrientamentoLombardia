@@ -1,0 +1,13 @@
+# Dati scaricati e intermedi: rigenerabili con tools/, pesano ~16 MB.
+# Si ignora il contenuto (data_raw/*) e non la cartella, altrimenti git non vi
+# entra e le eccezioni qui sotto non verrebbero applicate.
+data_raw/*
+
+# Eccezioni: la geocodifica costa ~25 minuti di richieste, vale conservarla
+!data_raw/geocache.json
+!data_raw/comuni_extra.json
+
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
